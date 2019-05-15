@@ -1,0 +1,267 @@
+<!--    Some alert scripts commented out because they were annoying -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playing Around w/ JavaScript</title>
+    <script type="text/javascript"  src="scripts.js"></script>
+</head>
+<body>
+
+<button onclick="openNewBrowserWindow()">Open W3Schools.com</button>    <!--    Button opens new browser tab / window once clicked  -->
+<hr>
+
+
+<!--    JS Functions    -->
+<h1>JS Functions</h1>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo3.1"></p>
+<p id="demo5"></p>
+
+
+<script>sayHello()</script>  <!--   Writes text to the following paragraphs:
+                                        demo:   Hello JavaScript!
+                                        demo2:  Yo Yo Yo
+                                        demo3:  5
+                                        demo3.1:    6 (y++ increment)
+                            -->
+
+<script>document.getElementById("demo5").innerHTML = returnStuff();</script>    <!--   Returns/Writes info stored in returnStuff() function ("This is the returnStuff function") to "demo5" paragraph   -->
+
+<!--    <script>alertHello()</script>   -->
+
+
+<!--    JS Objects    -->
+<!--    <script>alert(person.firstName + " is a " + person.gender);</script>    -->   <!--    Creates pop up alert box and displays firstName and gender properties stored inside person object -->
+<!--    <script>alert(person2.firstName + " is a " + person2.gender);</script>  -->   <!--    Creates pop up alert box and displays firstName and gender properties stored inside person2 object -->
+
+
+<hr>
+<!--    JS Events   -->
+<h1>JS Events</h1>
+
+<button onclick = buttonClick()>This is a button</button>  <!--    Creates pop up alert box that runs the buttonClick() function and alerts "Hello" once the button is clicked -->
+
+<br><br>
+
+<div id="mouseHoverDIV"  onmouseover="mouseHover()">Hover DIV</div> <!--    div "mouseHoverDIV" turns red when hovered over (mouseHover() function being ran on hover)  -->
+<div onmouseover="this.style.backgroundColor='blue'">Hover DIV Blue</div>   <!--    div turns blue when hovered over (styling being done in line - "this(div.style.backgroundColor") -->
+
+<br><br>
+
+<hr>
+<!--    JS Strings   -->
+<h1>JS Strings</h1>
+
+<button onclick = lengthProperty()>This button alerts you to the length of "Hello World!"</button>  <!--    This button alerts/displays the length of "Hello World!" once clicked   -->
+
+<br><br>
+
+<p id="demo6"></p>
+<script>escapeChars()</script>  <!--    This script shows how to use escape characters in a line of text (Using "" or '')   -->
+
+<p id="demo7"></p>
+<script>findPosition()</script> <!--    This script shows the positional value of the "h" character in the "line" variable -->
+
+<p id="demo8"></p>
+<script>performSlice()</script> <!--    This script takes a sentence and slices out the section (based on numeral positioning) of characters specified -->
+
+<p id="demo9"></p>
+<script>replaceText()</script>  <!--    This script replaces the word "Hello" with "Hola"   -->
+
+<p id="demo10"></p>
+<script>replaceText()</script>  <!--    This script replaces the word "Hello" with "Hola"   -->
+
+<p id="demo11"></p>
+<script>upperCase()</script>  <!--  Prints the sentence as-is in lower case  -->
+<p id="demo11.1"></p>
+<script>upperCase()</script>  <!--  Prints the sentence in all caps (upperCase function)  -->
+
+<p id="demo12"></p>
+<script>lowerCase()</script>  <!--  Prints the sentence as-is in all caps  -->
+<p id="demo12.1"></p>
+
+
+<hr>
+<!--    JS Arrays   -->
+<h1>JS Arrays</h1>
+
+<p id="demo14"></p>
+<script>thisIsAnArray()</script>  <!--  This shows how an array works and prints a single value from it  -->
+<p id="demo14.1"></p>
+<script>thisIsAlsoAnArray()</script>  <!--  This shows how an array works and prints a single value from it  -->
+
+<p id="demo14.2"></p>
+<script>arrayToString()</script>  <!--  This converts an array to a string and prints it  -->
+
+<p id="demo14.3"></p>
+<script>arrayJoinString()</script>  <!--  This joins all elements inside fruits array into a string  -->
+
+<p id="demo15"></p>
+<p id="demo15.1"></p>
+<script>changeArrayItem()</script>  <!--  This shows how to change an array item, then prints it  -->
+
+<p id="demo16"></p>
+<script>countArrayItems()</script>  <!--  This shows how to count the number of items in an array  -->
+
+<p id="demo17"></p> <!--    Prints fruits array as-is   -->
+<p id="demo17.1"></p>   <!--    Prints fruits array -->
+<script>popArrayItem()</script>  <!--   Fruits array after popping last item off of it   -->
+
+<p id="demo18"></p> <!--    Prints fruits array as-is   -->
+<p id="demo18.1"></p>   <!--    Prints fruits array -->
+<script>pushArrayItem()</script>  <!--   Fruits array after pushing Watermelon to the end of it   -->
+
+<p id="demo19"></p> <!--    Prints fruits array as-is   -->
+<p id="demo19.1"></p>   <!--    Prints fruits array -->
+<script>spliceArrayItems()</script>  <!--   Splices items 1, 2, and 3 from the fruits array   -->
+
+<!--    Merging (Concatenating) Arrays  -->
+<!--    The concat() method creates a new array by merging (concatenating) existing arrays: -->
+
+<p id="demo20"></p> <!--    Prints myFriends array   -->
+<p id="demo20.1"></p>   <!--    Prints myEnemies array -->
+<p id="demo20.2"></p>   <!--    Prints merged array -->
+<p id="demo20.3"></p>   <!--    Prints merged array alphabetically -->
+<script>mergeArrays()</script>  <!--   Merges myFriends and myEnemies arrays and prints all (myContacts)   -->
+
+
+<hr>
+<!--    JS Dates   -->
+<h1>JS Dates</h1>
+
+<p id="demo21"></p> <!-- Prints today's date   -->
+<p id="demo21.1"></p> <!-- Prints the current year    -->
+<p id="demo21.2"></p> <!-- Prints the current month as a number   0 = January  11 = December    -->
+<p id="demo21.3"></p> <!--  Prints the set date info with the new, specified year (2020)  -->
+<script>displayDate()</script>  <!--  Sets date information  -->
+
+
+<hr>
+<!--    JS Math   -->
+<h1>JS Math</h1>
+
+
+<p id="demo22"></p> <!--  Prints a randomized number between 0 and 1 -->
+<p id="demo22.1"></p> <!--  Prints a randomized number between 0 and 1 -->
+<p id="demo22.2"></p> <!--  Prints a the higher number between "number" and "number2" -->
+<p id="demo22.3"></p> <!--  Prints the closest (rounded) integer to the highest number -->
+<p id="demo22.4"></p> <!--  Prints the square root of 4  -->
+<script>funMath()</script>  <!--  Sets Math/number information  -->
+
+
+<hr>
+<!--    JS Comparisons   -->
+<h1>JS Comparisons</h1>
+
+
+<p id="demo23"></p> <!--    Prints True/False of greater randomized number  -->
+<p id="demo23.1"></p> <!--    Prints True/False if 5 equals 5  -->
+<p id="demo23.2"></p> <!--    Prints True/False if 5 equals 6  -->
+<p id="demo23.3"></p> <!--    Prints True/False if 5 equals 6  -->
+<p id="demo23.4"></p> <!--  Prints "Too Young" or "Old Enough" depending on age / validAge comparison   -->
+<script>someComparisons()</script>  <!--    Sets Comparisons information    -->
+
+
+<hr>
+<!--    JS Conditions   -->
+<h1>JS Conditions</h1>
+
+
+<p id="demo24"></p> <!--    Prints out if x or y is larger    -->
+<p id="demo24.1"></p> <!--    Prints out if x or y is larger    -->
+<script>someConditions()</script>  <!--    Sets Conditions information    -->
+
+
+<hr>
+<!--    JS Switch Statements   -->
+<h1>JS Switch Statements</h1>
+
+
+<p id="demo25"></p> <!--    Prints output of switchOne (if case is selected)  -->
+<p id="demo25.1"></p> <!--    Prints output of switchOne (if case is selected)  -->
+<p id="demo25.2"></p> <!--    Prints output of switchOne (if case is selected)  -->
+<p id="demo26"></p> <!--    Prints output of switchTwo  -->
+<p id="demo27"></p> <!--    Prints output of defaultSwitchExample  -->
+<script>switchOne()</script>  <!--    Sets switchOne function information    -->
+<script>switchTwo()</script>  <!--    Sets switchTwo function information    -->
+<script>defaultSwitchExample()</script>  <!--    Sets defaultSwitchExample function information    -->
+
+
+<hr>
+<!--    JS Loops   -->
+<h1>JS Loops</h1>
+
+
+<p id="demo28"></p> <!--   Runs through loop incrementing by one 10 times and prints the final value: 10    -->
+<script>forLoop()</script>  <!--    Sets forLoop function information    -->
+
+<p id="demo29"></p> <!--    Each loop will take the current property of the object and add it to the "output" string  -->
+<script>forInLoop()</script>  <!--    Sets forInLoop function information    -->
+<p id="demo30"></p> <!--    Each loop will take the current element of the array and add it to the "output" string  -->
+<script>forInLoopArray()</script>  <!--    Sets forInLoopArray function information    -->
+
+<script>whileLoop()</script>  <!--    Sets whileLoop function information    -->
+<script>whileLoopIncrementByTwo()</script>  <!--    Sets whileLoopIncrementByTwo function information    -->
+
+<script>doWhileLoop()</script>  <!--    Sets doWhileLoop function information    -->
+<p id="demo31"></p>
+<script>doWhileLoop2()</script>  <!--    Sets doWhileLoop2 function information    -->
+
+
+<script>forLoopBreak()</script>  <!--    Sets forLoopBreak function information    -->
+
+<p id="demo32"></p>
+<script>forLoopContinue()</script>  <!--    Sets forLoopContinue function information    -->
+
+
+<hr>
+<!--    JS HTML DOM (Document Object Model)   -->
+<h1>JS HTML DOM (Document Object Model)</h1>
+
+
+<p id="demo33">There is currently text here.</p>
+<p class = "test">There is currently some stuff in here.</p>
+<img id= frowny_face    src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Emoticon_Face_Frown_GE.png/220px-Emoticon_Face_Frown_GE.png">
+<br><br>
+<input type = "text"    id = "myText"   value = "Hello">
+<p id="demo34">Watch me change colors!</p>
+<p id="demo35">Watch me GROW!</p>
+<p id="demo36">Now I am here. Now I am... (not)</p>
+
+<br>
+
+<button id="DOM_Button" onclick="DOM_Example()">This is the DOM Button - Push it to change some things!</button> <!-- Button once clicked, changes:
+
+ * "demo33" paragraph text to text stored in DOM_Example script
+ * h1 [9] (tenth h1 element) to say "Changed it yo"
+ * first [0] class named "test" to say "I changed this too!"
+ * "frowny_face img Id to a crazy face
+ * text field "myText" pre-set value from "Hello" to "Heyyyyy"
+ * "demo34" paragraph text colors to red from standard black
+ * "demo35" paragraph text enlarges to 50 pixels size
+ * "demo36" paragraph text becomes hidden (css = style.display = "none";)
+
+
+  -->
+
+<br><br><br><br>
+
+<button id="eventListenerDemo" onclick="EventListener()">This button demos the addEventListener method</button>
+<br><br>
+<button id="eventListenerDemoAlert">This button also demos the addEventListener method</button>
+<br><br>
+<button id="eventListenerDemoRemoval" onclick="removeListener()">This button demos the removeEventListener method</button>
+
+
+
+
+
+
+
+</body>
+</html>

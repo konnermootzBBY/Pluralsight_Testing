@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Exercises</title>
+    <script type="text/javascript"  src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div id="topofpage"></div>
+
+<button onclick="openNewBrowserWindow()">Open W3Schools.com</button>    <!--    Button opens new browser tab / window once clicked  -->
+<hr>
+<h1>HTML Attributes</h1>    <!--    https://www.w3schools.com/html/html_attributes.asp  -->
+
+
+<p>Attributes provide additional information about HTML elements.</p>
+<ul>
+    <li>All HTML elements can have <b>attributes</b></li>
+    <li>Attributes provide <b>additional information</b> about an element</li>
+    <li>Attributes are always specified in <b>the start tag</b></li>
+    <li>Attributes usually come in name/value pairs like: <b>name="value"</b></li>
+</ul>
+
+<br>
+
+<p title="This is a tooltip">This paragraph demos the "tooltip" functionality</p>   <!--    Pop up text when you highlight over the paragraph   -->
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ357XfOI-E_wJzebLeqb-AmB2zCGPeVPz1HocmZ-xcLfIO7rNt" width="250" height="225"    alt="HTML5 Logo / Pic">   <!--    Image is 250px wide and 225px tall. Image includes (alt)ernate text when the image can't be displayed (like when read by screen reader)  -->
+<br><br>
+<a href="https://W3Schools.com">W3 Schools</a>
+<br><br>
+
+
+<hr>
+<h1>HTML Headings</h1>    <!--    https://www.w3schools.com/html/html_headings.asp  -->
+
+
+<h1><u>h1 - h6 Heading Sizes:</u></h1>
+<h1>h1 Heading</h1>
+<h2>h2 Heading</h2>
+<h3>h3 Heading</h3>
+<h4>h4 Heading</h4>
+<h5>h5 Heading</h5>
+<h6>h6 Heading</h6>
+
+
+<hr>
+<h1>HTML Paragraphs</h1>    <!--    https://www.w3schools.com/html/html_paragraphs.asp  -->
+
+
+<!--
+
+The HTML <pre> element defines preformatted text. The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.
+
+-->
+
+<p><span><</span>pre> element (defines preformatted text):</p>
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+
+
+<hr>
+<h1>HTML Styles</h1>    <!--    https://www.w3schools.com/html/html_styles.asp  -->
+
+
+<p style="color:blue; font-family:'arial'; text-align:center; font-size:30px; background-color:orange;">This paragraph is blue, arial font, centered, 30px size, and orange background using inline css.</p>
+
+
+<hr>
+<h1>HTML Text Formatting</h1>    <!-- https://www.w3schools.com/html/html_formatting.asp -->
+
+
+<strong>Example of <span><</span>strong> tag using <span><</span>strong> tag</strong>
+<p style="font-weight: bold;">Example of <span><</span>strong> tag using inline css</p>
+
+<br>
+
+<em>Example of <span><</span>em> tag using <span><</span>em> tag</em>
+<p style="font-style:italic">Example of <span><</span>em> tag using inline css</p>
+
+<br>
+
+<mark>Example of <span><</span>mark> tag using <span><</span>mark> tag</mark>
+<p style="background-color:yellow; color:black;">Example of <span><</span>mark> tag using inline css</p>
+
+<br>
+
+<sub>Example of <span><</span>sub> tag using <span><</span>sub> tag</sub>
+<p style="vertical-align:sub; font-size:smaller;">Example of <span><</span>sub> tag using inline css</p>
+
+<br>
+
+<del>Example of <span><</span>del> tag using <span><</span>del> tag</del>
+<p style="text-decoration:line-through;">Example of <span><</span>del> tag using inline css</p>
+
+
+<hr>
+<h1>HTML Quotation and Citation Elements</h1>    <!-- https://www.w3schools.com/html/html_quotation_elements.asp -->
+
+
+<q>Example of <span><</span>q> tag using <span><</span>q> tag</q>
+<br>
+<p id="q-tag">Example of <span><</span>q> tag using styles.css</p>  <!-- q-tag selector located in styles.css -->
+
+<br><br>
+
+<blockquote cite="https://www.w3schools.com/tags/tag_blockquote.asp">
+    This is an example of a <span><</span>blockquote> tag. The HTML <span><</span>blockquote> element defines a section that is quoted from another source. Browsers usually indent <span><</span>blockquote> elements.
+</blockquote>
+
+<br>
+
+<p><span><</span>bdo> tag: bdostands for Bi-Directional Override. The <span><</span>bdo> tag is used to override the current text direction.</p>
+Example: <bdo dir="rtl">The <span><</span>bdo> tag is used to override the current text direction.</bdo>
+
+<!-- https://www.w3schools.com/tags/tag_bdo.asp -->
+<br><br>
+
+<p>The HTML <span><</span>abbr> element / tag defines an abbreviation or an acronym. Marking abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+<p>Example of <span><</span>abbr> tag: The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<p>Example of <span><</span>abbr> tag using CSS to remove underline: The <abbr id="no-underline" title="World Health Organization">WHO</abbr> was founded in 1948.</p> <!-- styles.css has #no-underline text-decoration set to none -->
+
+
+<hr>
+<h1>HTML CSS (Styling HTML with CSS)</h1>    <!-- https://www.w3schools.com/html/html_css.asp -->
+
+<!-- styles.css "HTML Styles - CSS"
+
+     What was done:
+     * Set body background color to lightgray
+     * Set body font to Comic Sans MS
+     * Set body font color to dark magenta
+     * Set font color of paragraph with id "special" to be red
+     * Set font color of paragraph with class name "unique" to be black
+     -->
+
+<p id="special">There is currently text in here. We will make this text red.</p>
+<p class="unique">There is currently text in here. We will make this purple.</p>
+
+
+<hr>
+<h1>HTML Links</h1>    <!-- https://www.w3schools.com/html/html_links.asp -->
+
+
+<a href="index.html" title="Cool JavaScript examples await you here!">Click here for some JavaScript examples.</a> <!-- adds tooltip notation to link when hovered over -->
+<br><br>
+<a href="https://w3schools.com" style="text-decoration:none";>This is a link but we removed the underline using CSS.</a>
+<br><br>
+<a href="https://google.com" target="_blank";>This is a link which will open Google in a new tab / window</a>
+<br><br>
+The following picture opens up ESPN.com once clicked.<br><a href="https://espn.com"><img src="ESPN.png"></a>
+<br><br>
+
+
+<hr>
+<h1>HTML Images</h1>    <!-- https://www.w3schools.com/html/html_images.asp -->
+
+
+This picture has a width of 300 pixels and a height of 250 pixels<br> <img src="https://i.kym-cdn.com/photos/images/newsfeed/000/006/054/Baby_Face_funny_.jpg" width="300" height="250">
+<br><br>
+This picture has a width of 250 pixels and a height of 150 pixels<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRYcWdrX1BeAtl4vhoAbKhPSDMjt5ioPNBULYLXIZO78HK8dcL" style="width:250px; height:150px;">
+<br><br>
+<p>
+    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple/v4/6e/a0/01/6ea00171-3f9d-6b2b-2038-1be3dc6a9f10/source/256x256bb.jpg" style="float:right";>
+    This is a pargraph full of text. Oh the wonder of HTML. Such a magnificient Hyper Text Markup Tool!
+    This paragraph also contains an image. Yippee! The only issue is that because the image is set to "float" to the right, it does outside of our body's border. :(
+</p>
+
+
+<hr>
+<h1>HTML Tables</h1>    <!-- https://www.w3schools.com/html/html_tables.asp -->
+
+
+<table style="width:300px"> <!-- style > width makes table 300 pixels wide -->
+    <caption>People</caption>
+    <tr>
+        <th rowspan="4">Information</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th colspan="2">Job Title and Organization</th> <!-- colspan takes up two columns worth of room for one "box" / "cell" -->
+    </tr>
+    <tr>
+        <td>Konner</td>
+        <td>Mootz</td>
+        <td>Superman</td>
+        <td>The World</td>
+    </tr>
+    <tr>
+        <td>Johnny</td>
+        <td>Williams</td>
+        <td>Regular Dude</td>
+        <td>Government</td>
+    </tr>
+    <tr>
+        <td>Jorge</td>
+        <td>Posada</td>
+        <td>Baseball Player</td>
+        <td>Houston Astros</td>
+    </tr>
+</table>
+
+
+<hr>
+<h1>HTML Lists</h1>    <!-- https://www.w3schools.com/html/html_lists.asp -->
+
+
+<ul style="list-style-type: square"> <!-- Squares specified instead of standard cirlces -->
+    <li>Unordered Item Number One</li>
+    <li>Unordered Item Number Two</li>
+    <li>Unordered Item Number Three</li>
+</ul>
+<ol type="A"> <!-- Uppercase letters specified instead of standard numbering -->
+    <li>Ordered Item Number One</li>
+    <li>Ordered Item Number Two</li>
+    <li>Ordered Item Number Three</li>
+</ol>
+<ol type="I"> <!-- Uppercase roman number specified instead of standard numbering -->
+    <li>Ordered Item Number One</li>
+    <li>Ordered Item Number Two</li>
+    <li>Ordered Item Number Three</li>
+</ol>
+<br>
+<dl>    <!-- Description list: List of terms, with a description of each term. The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term. -->
+    <dt>This Description List <span><</span>dl>  talks about different sports:</dt>
+    <dt>Baseball</dt>
+    <dd>- Sport using wooden bats and horsehide balls</dd>
+    <dt>Football</dt>
+    <dd>- Sport using lots of protective equipment and a pigskin ball</dd>
+    <dt>Hockey</dt>
+    <dd>- Sport using lots of protective equipment and a rubber puck</dd>
+</dl>
+
+
+<hr>
+<h1>HTML Classes</h1>    <!-- https://www.w3schools.com/html/html_classes.asp -->
+
+<!-- The HTML class attribute is used to define equal styles for elements with the same class name. So, all HTML elements with the same class attribute will have the same format and style. -->
+
+
+<p class="differentParagraph">This text has a different color since the CSS is altered using the class name.</p>
+
+<p class="multipleClasses example">You can even specify multiple classes easily. Shown in this sentence. Text is centered and the font family is Stencil.</p>
+
+
+<hr>
+<h1>HTML id Attribute</h1>    <!-- https://www.w3schools.com/html/html_id.asp -->
+
+<!-- The id attribute specifies a unique id for an HTML element (the value must be unique within the HTML document). The id value can be used by CSS and JavaScript to perform certain tasks for a unique element with the specified id value.
+
+Difference Between Class and ID: An HTML element can only have one unique id that belongs to that single element, while a class name can be used by multiple elements.
+-->
+
+
+<h1 id="HomePage">My Home Page</h1>
+<p id="Explanation">The above h1 has an id "HomePage" and the styles.css file is changing the text color to green. Just like how this p has an id "Explanation" which is setup in the styles.css file to shifts the text all the way to the right of the page. </p>
+
+
+<hr>
+<h1>HTML Scripts (JavaScript)</h1>    <!-- https://www.w3schools.com/html/html_scripts.asp -->
+
+
+<p id="demo">This is meant to show how JavaScript works.</p>
+<button id="changeText" onclick="showingJavascript()">This button will do magic things to the above text.</button>
+<script id="showingJavascript">
+    document.getElementById("demo").innerHTML = "Ta-daaaa! That is how scripting works with HTML!";
+</script>
+
+
+<hr>
+<h1>HTML Computer Code Elements</h1>    <!-- https://www.w3schools.com/html/html_computercode_elements.asp -->
+
+
+<code>This block shows how to use the <span><</span>code> tag:
+    var person = {
+    firstName:"John",
+    lastName:"Doe"
+    }
+</code>
+
+<p>Notice that the <span><</span>code> element does not preserve extra whitespace and line-breaks. To fix this, you can put the <span><</span>code> element inside a <span><</span>pre> element:</p>
+
+<p>
+<pre>
+    <code>
+        var person = {
+        firstName:"John",
+        lastName:"Doe"
+    }
+    </code>
+</pre>
+</p>
+
+<br>
+
+<p>This sentence shows how to use the <span><</span>kbd> tag. To save a document, press <kbd>Ctrl + S</kbd></p>
+
+<br>
+
+<p>This sentence shows how to use the <span><</span>samp> tag. If you input the wrong value, the program will return <samp>Error!</samp></p>
+
+<br>
+
+<p>This sentence shows how to use the <span><</span>var> tag. Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.
+</p>
+
+
+<hr>
+<h1>HTML Forms, Form Elements, Input Types, and Form Input Attributes</h1>    <!-- Forms: https://www.w3schools.com/html/html_forms.asp  Form Elements: https://www.w3schools.com/html/html_form_elements.asp  Input Types: https://www.w3schools.com/html/html_form_input_types.asp  Form Input Attributes: https://www.w3schools.com/html/html_form_attributes.asp -->
+
+
+<form action="action_page.php" method="POST" autocomplete="on"> <!-- Where forms gets submitted and how --> <!-- The "autocomplete" attribute specifies whether or not an input field should have autocomplete enabled. Autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the field, based on earlier typed values. Note: The autocomplete attribute works with the following <input> types: text, search, url, tel, email, password, datepickers, range, and color. -->
+    First Name:<br>
+    <input type="text" name="fname" value="First Name"><br> <!-- "value" attribute: Default text entry is "First Name" -->
+    Last Name:<br>
+    <input type="text" name="lname"><br><br>
+
+    <input type="radio" name="type-of-service-selection">Hardware <br>
+    <input type="radio" name="type-of-service-selection">Software <br>
+
+    <br>
+
+    Operating System:<br>
+    <input list="Operating-Systems" name="Operating-System">
+    <datalist id="Operating-Systems">   <!-- Specifies a list with pre-defined options (for input controls) -->
+        <option value="Windows 10">
+        <option value="Windows 7">
+        <option value="Mac OS X High Sierra">
+        <option value="Mac OS X Mojave">
+    </datalist>
+
+    <br><br>
+
+    Applications:<br>
+    <select name="Software Apps" size="5" multiple> <!-- Specifies a drop-down list. "multiple" attribute allows selecting multiple items -->
+        <option value="oms">Order Management System</option>
+        <option value="star">STAR Repair</option>
+        <option value="chrome">Google Chrome</option>
+        <option value="oms">Order Management System</option>
+        <option value="star">STAR Repair</option>
+        <option value="chrome">Google Chrome</option>
+        <option value="oms">Order Management System</option>
+        <option value="star">STAR Repair</option>
+        <option value="chrome">Google Chrome</option>
+        <option value="oms">Order Management System</option>
+        <option value="star">STAR Repair</option>
+        <option value="chrome">Google Chrome</option>
+    </select>
+
+    <br><br>
+
+    Comments:<br>
+    <textarea name="info" rows="10" cols="30" placeholder="Comments" maxlength="5000"></textarea>   <!-- Can also define sizing with CSS (Width and Height) --> <!-- "placeholder" attribute specifies pre-filled (light gray) informational text --> <!-- With a "maxlength" attribute, the input field will not accept more than the allowed number of characters. The "maxlength" attribute does not provide any feedback. If you want to alert the user, you must write JavaScript code. -->
+
+    <br><br>
+
+    <!-- Range Sliders  (https://www.w3schools.com/howto/howto_js_rangeslider.asp) -->
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="mySlider">
+    </div>
+
+    <br>
+
+    Rate the severity of the issue between 0 and 10 (0 = Low Severity  10 = High Severity):<br>
+    <input type="number" min="0" max="10">  <!-- Requires a number between 0 and 10 or else error message displays and form cannot be submitted: "Value must be greater than or equal to 0." or "Value must be less than or equal to 10." -->
+
+    <br><br>
+
+    <input type="Submit" value="Submit Form">
+</form>
+
+<br><br>
+
+<h2>Input Types:</h2>
+<!-- Fill in these definitions from: https://www.w3schools.com/html/html_form_input_types.asp -->
+<ul id="input-types">
+    <li>&lt;input type="button"&gt;</li>   <!-- "&lt;" = "<"    "&gt;" = ">" -->
+        <ul>
+            <li>Defines a button</li>
+        </ul>
+    <li>&lt;input type="checkbox"&gt;</li>
+        <ul>
+            <li>Defines a checkbox</li>
+            <li>Checkboxes let a user select ZERO or MORE options of a limited number of choices</li>
+        </ul>
+    <li>&lt;input type="color"&gt;</li>
+        <ul>
+            <li>Used for input fields that should contain a color</li>
+            <li>Depending on browser support, a color picker can show up in the input field</li>
+        </ul>
+    <li>&lt;input type="date"&gt;</li>
+        <ul>
+            <li>Used for input fields that should contain a date</li>
+            <li>Depending on browser support, a date picker can show up in the input field</li>
+        </ul>
+    <li>&lt;input type="datetime-local"&gt;</li>
+        <ul>
+            <li>Specifies a date and time input field, with no time zone</li>
+            <li>Depending on browser support, a date picker can show up in the input field</li>
+        </ul>
+    <li>&lt;input type="email"&gt;</li>
+        <ul>
+            <li>Used for input fields that should contain an e-mail address</li>
+            <li>Depending on browser support, the e-mail address can be automatically validated when submitted</li>
+            <li>Some smartphones recognize the email type, and add ".com" to the keyboard to match email input</li>
+        </ul>
+    <li>&lt;input type="file"&gt;</li>
+        <ul>
+            <li>Defines a file-select field and a "Browse" button for file uploads</li>
+        </ul>
+  undefin  <li>&lt;input type="hidden"&gt;</li>
+        <ul>
+            <li>Defines a hidden input field</li>
+            <li>Hidden fields let web developers include data that cannot be seen or modified by users when a form is submitted</li>
+            <li>Hidden fields often store what database records that needs to be updated when the form is submitted</li>
+            <li>Note: While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or "View Source" functionality. Do not use hidden inputs as a form of security!</li>
+        </ul>
+    <li>&lt;input type="image"&gt;</li>
+        <ul>
+            <li>Defines an image as a submit button</li>
+            <li>The path to the image is specified in the src attribute</li>
+        </ul>
+    <li>&lt;input type="month"&gt;</li>
+        <ul>
+            <li>Allows the user to select a month and year</li>
+            <li>Depending on browser support, a date picker can show up in the input field</li>
+        </ul>
+    <li>&lt;input type="number"&gt;</li>
+        <ul>
+            <li>Defines a numeric input field</li>
+            <li>You can also set restrictions on what numbers are accepted</li>
+        </ul>
+    <li>&lt;input type="password"&gt;</li>
+        <ul>
+            <li>Defines a password field</li>
+        </ul>
+    <li>&lt;input type="radio"&gt;</li>
+        <ul>
+            <li>Defines a radio button</li>
+            <li>Radio buttons let a user select ONLY ONE of a limited number of choices</li>
+        </ul>
+    <li>&lt;input type="range"&gt;</li>
+        <ul>
+            <li>Defines a control for entering a number whose exact value is not important (like a slider control)</li>
+            <li>Default range is 0 to 100</li>
+            <li>You can set restrictions on what numbers are accepted with the "min", "max", and "step" attributes</li>
+        </ul>
+    <li>&lt;input type="reset"&gt;</li>
+        <ul>
+            <li>Defines a reset button that will reset all form values to their default values</li>
+        </ul>
+    <li>&lt;input type="search"&gt;</li>
+        <ul>
+            <li>Used for search fields (a search field behaves like a regular text field)</li>
+        </ul>
+    <li>&lt;input type="submit"&gt;</li>
+        <ul>
+            <li>Defines a button for submitting form data to a form-handler</li>
+            <li>The form-handler is typically a server page with a script for processing input data</li>
+            <li>The form-handler is specified in the form's "action" attribute/li>
+        </ul>
+    <li>&lt;input type="tel"&gt;</li>
+        <ul>
+            <li>Used for input fields that should contain a telephone number</li>
+        </ul>
+    <li>&lt;input type="text"&gt;</li>
+        <ul>
+            <li>Defines a one-line text input field</li>
+        </ul>
+    <li>&lt;input type="time"&gt;</li>
+        <ul>
+            <li>Allows the user to select a time (no time zone)</li>
+            <li>Depending on browser support, a time picker can show up in the input field</li>
+        </ul>
+    <li>&lt;input type="url"&gt;</li>
+        <ul>
+            <li>Used for input fields that should contain a URL address</li>
+            <li>Depending on browser support, the url field can be automatically validated when submitted</li>
+            <li>Some smartphones recognize the url type, and adds ".com" to the keyboard to match url input</li>
+        </ul>
+    <li>&lt;input type="week"&gt;</li>
+        <ul>
+            <li>Allows the user to select a week and year</li>
+            <li>Depending on browser support, a date picker can show up in the input field</li>
+        </ul>
+</ul>
+
+<!-- Fill in these definitions from: https://www.w3schools.com/html/html_form_attributes.asp -->
+<h2>HTML5 added the following <code>&lt;input&gt;</code> attributes:</h2>
+<ul>
+    <li>autocomplete</li>
+    <li>autofocus</li>
+    <li>form</li>
+    <li>formaction</li>
+    <li>formenctype</li>
+    <li>formmethod</li>
+    <li>formnovalidate</li>
+    <li>formtarget</li>
+    <li>height and width</li>
+    <li>list</li>
+    <li>min and max</li>
+    <li>multiple</li>
+    <li>pattern (regexp)</li>
+    <li>placeholder</li>
+    <li>required</li>
+    <li>step</li>
+</ul>
+<p>and the following attributes for <code class="w3-codespan">&lt;form&gt;</code>:</p>
+<ul>
+    <li>autocomplete</li>
+    <li>novalidate</li>
+</ul>
+
+
+<hr>
+<h1>HTML iframes</h1>    <!-- https://www.w3schools.com/html/html_iframe.asp -->
+
+
+<iframe src="https://www.w3schools.com/html/html_iframe.asp" width="1000" height="1000" style="border: 2px solid black"></iframe>
+
+<br>
+
+<iframe src="index.html" width="1000" height="1000" style="border: 2px solid black"></iframe>
+
+<!-- This might not be functional - need to test further at home -->
+<iframe height="300px" width="100%" src="https://google.com" name="iframe_a"></iframe>
+<p><a href="https://google.com" target="iframe_a.htm">Google.com</a></p>
+
+
+
+
+</body>
+
+<footer>
+
+
+</footer>
+</html>

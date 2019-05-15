@@ -1,0 +1,81 @@
+caption {
+    border: 3px solid black;
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+
+/* HTML Text Formatting (https://www.w3schools.com/html/html_formatting.asp) */
+
+#q-tag {
+    display: inline;
+}
+
+#q-tag:before {
+    content: open-quote;
+}
+
+#q-tag:after {
+    content: close-quote;
+}
+
+/* Underline caused by <abbr> tag: https://stackoverflow.com/questions/26276556/remove-underlining-caused-by-abbr-tag */
+#no-underline{
+    text-decoration: none !important;
+}
+
+
+/* HTML Styles - CSS (https://www.w3schools.com/html/html_css.asp) */
+
+body {
+    background-color: lightgray;
+    font-family: "Comic Sans MS";
+    color: darkmagenta; /* Sets body font color to dark magenta */
+    border: 5px solid black;    /* Solid black box around all of body */
+    padding: 2%;    /* Pads outer body by 2% */
+
+}
+
+#special {  /* Paragraph with id "special" */
+    color: red;
+}
+
+p.unique {  /* Paragraph with class name "unique" */
+    color: black;
+}
+
+
+/* HTML Classes (https://www.w3schools.com/html/html_classes.asp) */
+
+p.differentParagraph {
+    color:darkblue;
+}
+
+p.multipleClasses {
+    text-align: center;
+}
+
+p.example {
+    font-family: Stencil;
+}
+
+
+/* HTML id Attribute (https://www.w3schools.com/html/html_id.asp) */
+
+#HomePage {
+    color: lawngreen;
+}
+
+#Explanation {
+    text-align: right;
+}
+
+#input-types {
+    line-height: 25pt;
+    font-size: 18px;
+    font-weight: bold;
+}
+
